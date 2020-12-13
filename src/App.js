@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <a href='#'>link</a>
+      <a href='#'>sobako</a>
     </div>
   );
 }
