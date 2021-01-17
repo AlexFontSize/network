@@ -1,0 +1,6 @@
+/*Footer*/
+.footer{
+    display: block;
+    min-height: 5vh;
+    background: rgb(28, 101, 236);
+}

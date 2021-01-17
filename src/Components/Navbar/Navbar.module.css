@@ -1,0 +1,10 @@
+/*Navbar*/
+.navbar{
+    position: sticky;
+    top: 90px;
+    max-height: 110vh;
+    grid-area: n;
+    background: rgb(248, 247, 247);
+    padding: 5px;
+    z-index: 1;
+}

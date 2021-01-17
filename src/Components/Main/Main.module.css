@@ -1,0 +1,5 @@
+/*Main*/
+.main{
+    grid-area: m;
+    border: 5px solid rgb(248, 247, 247);
+}

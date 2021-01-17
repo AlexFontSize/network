@@ -1,6 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgb(224, 224, 224);
+  padding: 10px 10vw;
+}
+.App{
+  width: 80vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  'h h'
+  'n m';
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+.default_blocks{
+  border-radius: 5px;
+}
 a{
-  display: block;
-  width: 100px;
-  margin: 50px auto;
-  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+a:hover{
+  color: rgb(153, 225, 253);
+}
+ul, ol{
+  list-style: none;
+}
+.avatar{
+  margin-top: 5px;
+}
+.avatar, .avatar > img{
+  width: 90px;
+  height: 90px;
+}
+.messages{
+  padding: 5px;
+}
+.message{
+  display: flex;
+  margin-top: 20px;
+}
+.message > .avatar, .message > .avatar > img{
+  width: 50px;
+  height: 50px;
+}
+.mes{
+  min-height: 30px;
+  background: rgb(49, 108, 196);
+  border: 3px solid rgb(24, 114, 218);
+  border-radius: 5px;
+  margin-left: 15px;
+}
+#mobile_nav{
+  width: 400px;
+  min-height: 5vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0 auto;
+  display: none;
+}
+#mobile_nav > a{
+  margin: 0 10px;
+}
+.navigation{
+  margin: 10px auto;
+  width: 110px;
+  padding: 10px;
+  position: sticky;
+  background: rgb(12, 123, 197);
+  border-radius: 2px;
+}
+.advertisement{
+  width: 200px;
+  min-height: 200px;
+  margin: 10px auto;
+}
+.advertisement > img{
+  width: 200px;
+  height: 200px;
+}
+.advertisement > a{
+  color: rgb(17, 106, 238);
+}
+@media screen and (max-width: 800px){
+  nav{
+      display: none;
+  }
+  aside{
+      display: none;
+  }
+  .links{
+      display: none;
+  }
+  header{
+      display: block;
+  }
+  header > div{
+      display: inline-block;
+  }
+  #mobile_nav{
+    display: block;
+  }
 }
