@@ -1,7 +1,9 @@
 .profile{
-    display: flex;
     padding: 5px;
     margin-bottom: 10px;
+}
+.my_profile{
+    display: flex;
 }
 .profile_avatar, .profile_avatar > img{
     width: 300px;

@@ -4,9 +4,10 @@ import {NavLink} from "react-router-dom";
 const Navbar = () => {
     return(
     <nav className={`default_blocks ${classes.navbar}`}>
-        <ul className="navigation">
-            <li><NavLink to="/profile">Профиль</NavLink></li>
-            <li><NavLink to="/messages">Сообщения</NavLink></li>
+        <ul className={classes.navigation}>
+            <li><NavLink activeClassName={classes.activeLink} to="/profile">Профиль</NavLink></li>
+            <li><NavLink activeClassName={classes.activeLink} to="/messages">Месенджер</NavLink></li>
+            <li><NavLink activeClassName={classes.activeLink} to="/news">Новости</NavLink></li>
           </ul>
     </nav>
     );
